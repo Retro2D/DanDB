@@ -34,6 +34,7 @@ def mse(act, pred):
 def matrix_combine(list1, list2, list3=None):
     if list3 == None:
         list3 = []
+        
     dimensions = 0
     matrixinit = []
     myvars = {"list1": list1, "list2": list2, "list3": list3}

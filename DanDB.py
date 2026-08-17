@@ -358,7 +358,6 @@ def pretty_print(table_name):
 
             #Length conditions
 
-            
             if i-1 <=len(table_name.data): 
                 if len(str(dataindex)) == len(xindex)+1:
                     columninit = columninit + (f"{dataindex}|") #Explain this later
@@ -373,7 +372,6 @@ def pretty_print(table_name):
 
                     columninit = columninit + (f"{(cleaneddata)}|") #Explain this later
                     
-        
         printinit.append(columninit)
 
     print(*printinit, sep="\n", end="") #This is our pretty print!

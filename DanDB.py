@@ -34,7 +34,7 @@ def mse(act, pred):
 def matrix_combine(list1, list2, list3=None):
     if list3 == None:
         list3 = []
-        
+
     dimensions = 0
     matrixinit = []
     myvars = {"list1": list1, "list2": list2, "list3": list3}
@@ -299,10 +299,6 @@ def create_table(name, rows, columns=1, data=None, column_names="Unspecified", r
 
     new_table = Table(name, rows, columns, data, column_names, row_names)
     return new_table
-
-def table_append(table_name, data):
-    table_name.table.append(data)
-    return table_name
 
 def table_replace(table_name, lines, new_val):
     if isinstance(lines, int):

@@ -1,0 +1,19 @@
+[project]
+name = "DanDB"
+version = "0.0.1"
+description = """
+    DanDB
+    An open-source statistics module created by Daniel Long.
+
+    Note: This module isn't ready for any heavy tasks yet.  This is mostly a passion project
+    built for fun by Danny. 
+"""
+
+authors = [
+    { name = "Daniel Long", email = "dandevthetrue@gmail.com" }
+]
+
+readme = "README.md"
+license = "MIT"
+
+requires-python = ">=3.8"

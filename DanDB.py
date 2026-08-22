@@ -216,6 +216,19 @@ class Table:
         tableinit = matrix_combine(bundledrows, self.columns)
         self.table = [self.name, tableinit]
 
+    def replace(self, lines, new_val):
+        if isinstance(lines, int):
+            self.mydata[lines] = new_val
+
+        elif isinstance(lines, list):
+            for i in lines:
+                self.data[i] = new_val
+
+        else:
+            raise ValueError("lines param must be either int or list datatype")
+    
+        return self
+
     #length organization methods
 
     @staticmethod
@@ -275,19 +288,6 @@ def create_table(name, rows, columns=1, data=None, column_names="Unspecified", r
 
     new_table = Table(name, rows, columns, data, column_names, row_names)
     return new_table
-
-def table_replace(table_name, lines, new_val):
-    if isinstance(lines, int):
-        table_name.mydata[lines] = new_val
-
-    elif isinstance(lines, list):
-        for i in lines:
-            table_name.data[i] = new_val
-
-    else:
-        raise ValueError("lines param must be either int or list datatype")
-    
-    return table_name
 
 def table_addxy(table, y_rep):
     pass

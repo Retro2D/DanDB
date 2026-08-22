@@ -31,38 +31,14 @@ def mse(act, pred):
 
     return mean(squared_dif) #Now we get the mean, which should be the output of the function.
 
-def matrix_combine(list1, list2, list3=None):
-    if list3 == None:
-        list3 = []
+def matrix_combine(*lists):
+    init_lists = [lst for lst in lists if lst]
 
-    dimensions = 0
-    matrixinit = []
-    myvars = {"list1": list1, "list2": list2, "list3": list3}
+    if not init_lists:
+        return("Warning: matrix_combine function must have at least one argument")
 
-    for i in range(3): #Check for amount of dimensions
-        listkey = f"list{i+1}"
+    return list(zip(init_lists))
 
-        if myvars[listkey] != []:
-            matrixinit.append(myvars[listkey])
-            dimensions=dimensions+1
-
-    if dimensions == 2:
-        return(list(zip(*matrixinit)))
-    
-    else:
-        outputlist = []
-        rangex = dimensions//2
-        parsedimensions = 0
-
-        for i in range(rangex):
-            outputlist.append(list(zip(matrixinit[parsedimensions], matrixinit[parsedimensions+1])))
-            parsedimensions=parsedimensions+2
-
-        if len(matrixinit) - parsedimensions != 0:
-            outputlist.append(matrixinit[parsedimensions])
-
-        return outputlist
-    
 ### Database functions ###
 
 #Init database datatypes

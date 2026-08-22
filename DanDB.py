@@ -218,11 +218,14 @@ class Table:
 
     def replace(self, lines, new_val):
         if isinstance(lines, int):
-            self.mydata[lines] = new_val
+            self.data[lines] = new_val
 
         elif isinstance(lines, list):
-            for i in lines:
-                self.data[i] = new_val
+            for i, x in enumerate(lines):
+                if isinstance(new_val, str):
+                    self.data[x] = new_val
+                elif isinstance(new_val, list):
+                    self.data[x] = new_val[i]
 
         else:
             raise ValueError("lines param must be either int or list datatype")

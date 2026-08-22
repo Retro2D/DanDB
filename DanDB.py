@@ -36,7 +36,7 @@ def matrix_combine(*lists):
 
     if not init_lists:
         return("Warning: matrix_combine function must have at least one argument")
-
+    
     return list(zip(init_lists))
 
 ### Database functions ###
@@ -61,7 +61,7 @@ class Table:
             chunk.append(row[i])
 
             for x in range(len(data)//len(row)):
-                chunk.append(data[x])
+                chunk.append(data[i * (len(row)-1) + x])
 
             output.append(chunk)
 
@@ -189,8 +189,6 @@ class Table:
 
         bundledrows = self.bundle_data_row(self.ycolumns, self.data)
 
-        print(bundledrows)
-
         tableinit = matrix_combine(bundledrows, self.columns)
         self.table = [self.name, tableinit]
         
@@ -229,6 +227,11 @@ class Table:
 
         else:
             raise ValueError("lines param must be either int or list datatype")
+
+        bundledrows = self.bundle_data_row(self.ycolumns, self.data)
+
+        tableinit = matrix_combine(bundledrows, self.columns)
+        self.table = [self.name, tableinit]
     
         return self
 

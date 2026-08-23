@@ -1,7 +1,7 @@
 # DanDB
 DanDB is a multi-purpose module built for statistics, analyitics, and some other uses (such as a limited selection of machine learning functions).  
 
-Current release is 0.0.1.  It can:
+Current release is 0.0.3.  It can:
 -Create and manipulate some basic two-dimensional graphs
 -Print out spreadsheets of those graphs
 -Provide an amount of essential formulas for graphing, data science, and machine learning (currently W.I.P with ML formulas)
@@ -9,7 +9,7 @@ Current release is 0.0.1.  It can:
 **IMPORTANT NOTICE:** This project is currently in pre-alpha.  It currently isn't meant for any serious work; it is mostly a fun side project I am building.
 
 # Guide
-Guide to using the module's functions.  Importing the module is what you do for any other module: `import DanDB`.  That's it.
+Guide to using the module's functions.  Install using `pip install DanDB==0.0.2`.  Importing the module is what you do for any other module: `import DanDB`.  That's it.
 
 ## Creating a table:
 

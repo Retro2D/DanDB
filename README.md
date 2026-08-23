@@ -13,7 +13,7 @@ Guide to using the module's functions.  Install using `pip install DanDB`.  Impo
 
 ## Creating a table:
 
-To create a basic chart, use the `create_table()` function.   The `create_table()` function has all the essential parameters for creating a basic table.  It requires `name` and `rows` parameters to function; their usage is self explanatory.  
+To create a basic chart, use the `create_table()` function.   The `create_table()` function has all the essential parameters for creating a basic table.  It requires `name` and `rows` parameters to function; their usage is self explanatory.  You must set a variable to create_table for it to work.  Example: `table = create_table(args)`
 
 The `name` parameter simply refers to the name you want to give the chart in both JSON and pretty print form, while the `rows` parameter refers to the amount of rows you want to give your chart.  
 

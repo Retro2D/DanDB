@@ -28,14 +28,14 @@ Tables have multiple methods and functions you can use to modify them.  Here is 
 
  1. `table.addrow(rows, row_name, content)` Adds a row (or multiple rows) to your table.  `rows` parameter specifies how many rows you want to add, while `row_name` parameter specifies what the names for the rows should be.  The value given to this parameter will be used for each row added to the table through this function.  `content` is used to specify the data given to the row.  Unlike other methods/functions, `content` must strictly be a list for it to function.
  2. `table.changetitle(newtitle)` Pretty straightforward.  You can change the visual title for your table using this function.  The `newtitle` parameter specifies what your new title should be called.  It must be a string.
- 3. `table.destroy()` Destroys your entire table, and replaces it with a dummy table.  Pretty straightforward; no parameters.
+ 3. `table.destroy()` Destroys your entire table, and replaces it with a dummy table.  Pretty straightforward; no parameters.  
+ 4. `table.replace(lines, newval)` Replaces values at `lines` list/int with data from `newval` list.  `lines` can be an int, though it will only replace data from one line.
 
 ## Functions
 
- 1. `table.replace(lines, newval)` Replaces values at `lines` list/int with data from `newval` list.  `lines` can be an int, though it will only replace data from one line.
+ 1. `DanDB.prettyprint(table)` Prints the formatted contents of a `table` onto the terminal in an excel-like style.
 
 # Outro
-This README is a work in progress, and doesn't cover half of the things in this module.  I would advise you to look into the `DanDB.py` file for more info on the functions and attributes of this module. 
+This README is a work in progress, and doesn't cover half of the things in this module.  I would advise you to look into the `DanDB.py` file for more info on the functions and attributes of this module.
 
 Good luck!  -Dan.
-

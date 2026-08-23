@@ -1,3 +1,5 @@
+from .DanDB import *
+
 """
     DanDB
     An open-source statistics module created by Daniel Long.

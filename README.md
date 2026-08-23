@@ -9,7 +9,7 @@ Current release is 0.0.3.  It can:
 **IMPORTANT NOTICE:** This project is currently in pre-alpha.  It currently isn't meant for any serious work; it is mostly a fun side project I am building.
 
 # Guide
-Guide to using the module's functions.  Install using `pip install DanDB==0.0.2`.  Importing the module is what you do for any other module: `import DanDB`.  That's it.
+Guide to using the module's functions.  Install using `pip install DanDB`.  Importing the module is what you do for any other module: `import DanDB`.  That's it.
 
 ## Creating a table:
 

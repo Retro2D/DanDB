@@ -31,7 +31,7 @@ Tables have multiple methods and functions you can use to modify them.  Here is 
  3. `table.destroy()` Destroys your entire table, and replaces it with a dummy table.  Pretty straightforward; no parameters.  
  4. `table.replace(lines, newval)` Replaces values at `lines` list/int with data from `newval` list.  `lines` can be an int, though it will only replace data from one line.
 
-## Functions
+### functions
 
  1. `DanDB.prettyprint(table)` Prints the formatted contents of a `table` onto the terminal in an excel-like style.
 

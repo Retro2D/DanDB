@@ -42,8 +42,3 @@ Tables have multiple methods and functions you can use to modify them.  Here is 
  1. `DanDB.prettyprint(table)` Prints the formatted contents of a `table` onto the terminal in an excel-like style.
 
  2. `DanDB.returnraw(table)` Prints the raw contents of a `table` onto the terminal.
-
-# Outro
-This README is a work in progress, and doesn't cover half of the things in this module.  I would advise you to look into the `DanDB.py` file for more info on the functions and attributes of this module.
-
-Good luck!  -Dan.

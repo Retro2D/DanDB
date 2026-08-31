@@ -285,10 +285,7 @@ class Table:
         return (f"{' ' * (toprow - len(str(currentrow)))}{currentrow}|")
 
     def getjson(self):
-        return(json.dumps(self.table, separators=(',', ':')))
-
-    def getformattedjson(self): #merge with getjson soon
-        return(json.dumps(self.table, indent=2))
+        return(json.dumps(self.table, separators=(',', ':', indent=2)))
 
     #File saving
     def writejson(self, filename):

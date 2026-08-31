@@ -32,10 +32,16 @@ Tables have multiple methods and functions you can use to modify them.  Here is 
  4. `table.replace(lines, newval)` Replaces values at `lines` list/int with data from `newval` list.  `lines` can be an int, though it will only replace data from one line.
  5. `table.getlongestrow()` Returns the longest row in the table.
  6. `table.getlongestcolumn()` Returns the longest column in the table.
+ 7. `table.getjson()` Returns the formatted json of the table.
+ 8. `table.writejson(filename)` Downloads the formatted json of the table onto the file path you choose (`filename`)
+
+
 
 ### functions
 
  1. `DanDB.prettyprint(table)` Prints the formatted contents of a `table` onto the terminal in an excel-like style.
+
+ 2. `DanDB.returnraw(table)` Prints the raw contents of a `table` onto the terminal.
 
 # Outro
 This README is a work in progress, and doesn't cover half of the things in this module.  I would advise you to look into the `DanDB.py` file for more info on the functions and attributes of this module.

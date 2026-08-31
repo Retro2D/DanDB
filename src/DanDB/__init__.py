@@ -287,7 +287,7 @@ class Table:
     def getjson(self):
         return(json.dumps(self.table, separators=(',', ':')))
 
-    def getformattedjson(self):
+    def getformattedjson(self): #merge with getjson soon
         return(json.dumps(self.table, indent=2))
 
     #File saving
